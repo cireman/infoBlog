@@ -15,154 +15,166 @@
   </head>
   <body>
     <div class="hero"></div>
-    <header>
-      <nav>
-        <details>
-          <summary>
-            Setup
-          </summary>
-          <ol>
-            <li><a href="#chrome">Google Chrome</a></li>
-            <li><a href="#vsc">Visual Studio Code</a></li>
-            <li><a href="#figma">figma</a></li>
-            <li><a href="#github">github</a></li>
-          </ol>
-        </details>
-        <details>
-          <summary>
-            Essential Concepts of Web Development
-          </summary>
-          <ol>
-            <li><a href="#html">What is HTML?</a></li>
-            <li><a href="#tags">Tags</a></li>
-            <li><a href="#dom">DOM</a></li>
-            <li><a href="#semantics">Semantics</a></li>
-            <li><a href="#atributes">Atributes</a></li>
-            <li><a href="#css">What is CSS?</a></li>
-          </ol>
-        </details>
-      </nav>
-    </header>
-    <main>
-      <h1>Essential HTML and CSS course</h1>
-      <p>
-        This is the beginning of your career as a Web Developer, you will start learning HTML and CSS for content creation, in level 2 you will learn about components and in level 3 about layouts.
-      </p>
-      <hr>
-      <section class="section-content">
-        <h2>
-          Setup
-        </h2>
-        <img src="./images/Google-Chrome.png" alt="Google chrome logo" title="Google chrome logo">
-        <h3 id="chrome">
-          Google Chrome
-        </h3>
-        <p>
-          Chrome is going to be the browser we will use in the course because of its extensive support for new standards and advanced, user-friendly development tools.
-        </p>
-        <img src="./images/Visual-Studio-Code.png" alt="Visual studio code editor logo" title="Visual studio code editor logo">
-        <h3 id="vsc">
-          Visual Studio Code
-        </h3>
-        <p>
-          Visual Studio Code is the most popular and powerful text editor on the market today, its ease of use and the ability to extend it through plugins makes it the perfect complement for any programmer regardless of the language in which it is developed.
-        </p>
-        <img src="./images/Figma.png" alt="Figma logo" title="Figma logo">
-        <h3 id="figma">
-          Figma
-        </h3>
-        <p>
-          Figma is one of the most popular tools today to deliver designs to developers for implementation because of its ease of use because it can be used directly from the browser.
-        </p>
-        <img src="./images/GitHub.png" alt="Github logo" title="Github logo">
-        <h3 id="github">
-          Github
-        </h3>
-        <p>
-          Just like on Facebook your friends find you, on Github other programmers from all over the world find you, instead of uploading pictures of your travels here you upload your code and you can choose to make it "open source" or keep it private, Github will be essential to store your future portfolio.
-        </p>
-        <blockquote>
+    <div class="header">
+      <div class="wrapper">
+        <div class="header-content">
+          <header>
+            <nav>
+              <details open>
+                <summary>
+                  Setup
+                </summary>
+                <ol>
+                  <li><a href="#chrome">Google Chrome</a></li>
+                  <li><a href="#vsc">Visual Studio Code</a></li>
+                  <li><a href="#figma">figma</a></li>
+                  <li><a href="#github">github</a></li>
+                </ol>
+              </details>
+              <details open>
+                <summary>
+                  Essential Concepts of Web Development
+                </summary>
+                <ol>
+                  <li><a href="#html">What is HTML?</a></li>
+                  <li><a href="#tags">Tags</a></li>
+                  <li><a href="#dom">DOM</a></li>
+                  <li><a href="#semantics">Semantics</a></li>
+                  <li><a href="#atributes">Atributes</a></li>
+                  <li><a href="#css">What is CSS?</a></li>
+                </ol>
+              </details>
+            </nav>
+          </header>
+        </div>
+      </div>
+    </div>
+    <main class="main">
+      <div class="wrapper">
+        <div class="main-content">
+          <h1>Essential HTML and CSS course</h1>
           <p>
-            "This is the start of your career as a Web Developer."
+            This is the beginning of your career as a Web Developer, you will start learning HTML and CSS for content creation, in level 2 you will learn about components and in level 3 about layouts.
           </p>
-          <p>
-            - Leonidas Esteban
-          </p>
-        </blockquote>
-      </section>
-      <hr>
-      <section class="section-content">
-        <h2>
-          Essential Concepts of Web Development
-        </h2>
-        <h3 id="html">What is HTML?</h3>
-        <p>
-          HyperText Markup Language. It is the most basic component of the web. It defines the meaning and structure of content.
-        </p>
-        <pre>
-  &lt;!DOCTYPE html&gt;
-  &lt;html lang=&quot;en&quot;&gt;
-  &lt;head&gt;
-  &lt;meta charset=&quot;UTF-8&quot;&gt;
-  &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
-  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-  &lt;title&gt;Document&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;        
-  &lt;/body&gt;
-  &lt;/html&gt;
-        </pre>
-        <h3 id="tags">Tags</h3>
-        <p>
-          HTML tags will help us to provide structure and semantics to the content of our website and each one has different characteristics and uses although visually they give a similar result.
-        </p>
-        <p>
-          Many tags are easy to differentiate such as headings or images and other different ones such as header, footer, section or div, this is where semantics will be the answer and if we know a little English we can also get a small idea of its use but in this course we will use the most important and that will be part of your day to day as a Software Developer.
-        </p>
-        <h3 id="dom">DOM</h3>
-        <p>
-          The Document Object Model is a tree structure that will represent all our web projects as if it were a family tree: parents, children, siblings with infinite levels. When we understand this nesting we can identify dependencies, inheritance in css and how complex our project is.
-        </p>
-        <img src="./images/dom.png" alt="tree structure that represent the Document Object Model" title="DOM represetation">
-        <h3 id="semantics">Semantics</h3>
-        <p>
-          Semantics gives meaning to every element that exists on a website, some elements will be merely decorative and should not mean anything but others will be titles and should be in different hierarchies or some sections will be more relevant than others, this will help search engines like Google or Duck Duck Go to differentiate your content, categorize and will be the most valuable tools to be in the first SEO search results. It will also help the accessibility of your website, so that people with different abilities can understand each content.
-        </p>
-        <h3 id="atributes">Atributes</h3>
-        <p>
-          Attributes give extra features to the tags to complement information and are preprogrammed by the browser, some attributes work on all tags in the same way like 'class' but other attributes work on only some tags like src.
-        </p>
-        <h3 id="css">CSS</h3>
-        <p>
-          Cascading Style Sheets or CSS is the style language used to describe the presentation of HTML documents.
-        </p>
-        <img src="./images/image-5.png" alt="CSS logo" title="CSS logo">
-      </section>
-      <section class="section-content">
-        <h2>Box Model</h2>
-        <h3>The box model is composed of:</h3>
-        <ol>
-          <li>Content size (width and height)</li>
-          <li>padding</li>
-          <li>border</li>
-          <li>margin</li>
-        </ol>
-        <h3>Physical properties for the box model:</h3>
-        <ol>
-          <li>width / height</li>
-          <li>margin / margin-top | margin-right | margin-bottom | margin-left</li>
-          <li>border / border-top | border-right | border-bottom | border-left</li>
-          <li>padding / padding-top | padding-right | padding-bottom | padding-left</li>
-        </ol>
-        <h3>Logical properties for the box model:</h3>
-        <ul>
-          <li>inline-size / block-size</li>
-          <li>margin-block | margin-inline | margin-block-start | margin-block-end | margin-inline-start | margin-inline-end</li>
-          <li>border-block | border-inline | border-block-start | border-block-end | border-inline-start | border-inline-end</li>
-          <li>padding-block | padding-inline | padding-block-start | padding-block-end | padding-inline-start | padding-inline-end</li>
-        </ul>
-      </section>
-      <p>If you have any question send me an email: <a href="mailto:ericpetrus@gmail.com">ericpetrus@gmail.com</a></p>
+          <hr>
+          <section class="section-content">
+            <h2>
+              Setup
+            </h2>
+            <img src="./images/Google-Chrome.png" alt="Google chrome logo" title="Google chrome logo">
+            <h3 id="chrome">
+              Google Chrome
+            </h3>
+            <p>
+              Chrome is going to be the browser we will use in the course because of its extensive support for new standards and advanced, user-friendly development tools.
+            </p>
+            <img src="./images/Visual-Studio-Code.png" alt="Visual studio code editor logo" title="Visual studio code editor logo">
+            <h3 id="vsc">
+              Visual Studio Code
+            </h3>
+            <p>
+              Visual Studio Code is the most popular and powerful text editor on the market today, its ease of use and the ability to extend it through plugins makes it the perfect complement for any programmer regardless of the language in which it is developed.
+            </p>
+            <img src="./images/Figma.png" alt="Figma logo" title="Figma logo">
+            <h3 id="figma">
+              Figma
+            </h3>
+            <p>
+              Figma is one of the most popular tools today to deliver designs to developers for implementation because of its ease of use because it can be used directly from the browser.
+            </p>
+            <img src="./images/GitHub.png" alt="Github logo" title="Github logo">
+            <h3 id="github">
+              Github
+            </h3>
+            <p>
+              Just like on Facebook your friends find you, on Github other programmers from all over the world find you, instead of uploading pictures of your travels here you upload your code and you can choose to make it "open source" or keep it private, Github will be essential to store your future portfolio.
+            </p>
+            <blockquote>
+              <p>
+                "This is the start of your career as a Web Developer."
+              </p>
+              <p>
+                <span>
+                  Leonidas Esteban
+                </span>
+              </p>
+            </blockquote>
+          </section>
+          <hr>
+          <section class="section-content">
+            <h2>
+              Essential Concepts of Web Development
+            </h2>
+            <h3 id="html">What is HTML?</h3>
+            <p>
+              HyperText Markup Language. It is the most basic component of the web. It defines the meaning and structure of content.
+            </p>
+            <pre>
+      &lt;!DOCTYPE html&gt;
+      &lt;html lang=&quot;en&quot;&gt;
+      &lt;head&gt;
+      &lt;meta charset=&quot;UTF-8&quot;&gt;
+      &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+      &lt;title&gt;Document&lt;/title&gt;
+      &lt;/head&gt;
+      &lt;body&gt;  
+    
+      &lt;/body&gt;
+      &lt;/html&gt;
+            </pre>
+            <h3 id="tags">Tags</h3>
+            <p>
+              HTML tags will help us to provide structure and semantics to the content of our website and each one has different characteristics and uses although visually they give a similar result.
+            </p>
+            <p>
+              Many tags are easy to differentiate such as headings or images and other different ones such as header, footer, section or div, this is where semantics will be the answer and if we know a little English we can also get a small idea of its use but in this course we will use the most important and that will be part of your day to day as a Software Developer.
+            </p>
+            <h3 id="dom">DOM</h3>
+            <p>
+              The Document Object Model is a tree structure that will represent all our web projects as if it were a family tree: parents, children, siblings with infinite levels. When we understand this nesting we can identify dependencies, inheritance in css and how complex our project is.
+            </p>
+            <img src="./images/dom.png" alt="tree structure that represent the Document Object Model" title="DOM represetation" width="900px" height="470px">
+            <h3 id="semantics">Semantics</h3>
+            <p>
+              Semantics gives meaning to every element that exists on a website, some elements will be merely decorative and should not mean anything but others will be titles and should be in different hierarchies or some sections will be more relevant than others, this will help search engines like Google or Duck Duck Go to differentiate your content, categorize and will be the most valuable tools to be in the first SEO search results. It will also help the accessibility of your website, so that people with different abilities can understand each content.
+            </p>
+            <h3 id="atributes">Atributes</h3>
+            <p>
+              Attributes give extra features to the tags to complement information and are preprogrammed by the browser, some attributes work on all tags in the same way like 'class' but other attributes work on only some tags like src.
+            </p>
+            <h3 id="css">CSS</h3>
+            <p>
+              Cascading Style Sheets or CSS is the style language used to describe the presentation of HTML documents.
+            </p>
+            <img src="./images/image-5.png" alt="CSS logo" title="CSS logo">
+          </section>
+          <section class="section-content">
+            <h2>Box Model</h2>
+            <h3>The box model is composed of:</h3>
+            <ol>
+              <li>Content size (width and height)</li>
+              <li>padding</li>
+              <li>border</li>
+              <li>margin</li>
+            </ol>
+            <h3>Physical properties for the box model:</h3>
+            <ol>
+              <li>width / height</li>
+              <li>margin / margin-top | margin-right | margin-bottom | margin-left</li>
+              <li>border / border-top | border-right | border-bottom | border-left</li>
+              <li>padding / padding-top | padding-right | padding-bottom | padding-left</li>
+            </ol>
+            <h3>Logical properties for the box model:</h3>
+            <ul>
+              <li>inline-size / block-size</li>
+              <li>margin-block | margin-inline | margin-block-start | margin-block-end | margin-inline-start | margin-inline-end</li>
+              <li>border-block | border-inline | border-block-start | border-block-end | border-inline-start | border-inline-end</li>
+              <li>padding-block | padding-inline | padding-block-start | padding-block-end | padding-inline-start | padding-inline-end</li>
+            </ul>
+          </section>
+          <p>If you have any question send me an email: <a href="mailto:ericpetrus@gmail.com">ericpetrus@gmail.com</a></p>
+        </div>
+      </div>
     </main>
   </body>
 </html>
